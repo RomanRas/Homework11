@@ -23,8 +23,8 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        int distance = 103;
-        if (calculateDeliveryTime(distance) == 0) {
+        int distance = 95;
+        if (distance > 100) {
             System.out.println("Доставки нет");
         } else {
             System.out.println("Потребуется дней: " + calculateDeliveryTime(distance));
@@ -58,10 +58,8 @@ public class Main {
             return 1;
         } else if (distance <= 60){
             return 2;
-        } else if (distance <= 100) {
-            return 3;
         } else {
-            return 0;
+            return 3;
         }
     }
 }
